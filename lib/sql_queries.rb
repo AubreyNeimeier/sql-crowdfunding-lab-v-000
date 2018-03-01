@@ -13,7 +13,7 @@ def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_
   #order by user.name
 "SELECT projects.title FROM projects
  JOIN pledges ON projects.id = pledges.project_id
- SELET SUM(pledges.amount) WHERE projects.id = pledges.project_id AS total_pledges
+ SELECT SUM(pledges.amount) WHERE projects.id = pledges.project_id AS total_pledges
  ORDER BY projects.title;"
 end
 
