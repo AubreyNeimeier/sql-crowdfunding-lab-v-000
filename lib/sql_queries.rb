@@ -35,7 +35,7 @@ ORDER BY SUM(pledges.amount) ASC, users.name;"
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
-"SELECT projects.category, pledges.amounts FROM projects
+"SELECT projects.category, pledges.amount FROM projects
 INNER JOIN pledges ON projects.id = pledges.project_id
 WHERE projects.category = 'music';"
 end
